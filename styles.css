@@ -144,17 +144,18 @@ hr {
   box-shadow: -4px -4px 4px #ffffff40, 4px 4px 4px #ffffff40;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
-    max-width: 750px;
-    min-width: 450px;
+    max-width: 600px;
+    width: 400px;
+    min-width: 350px;
     min-height: 500px;
     margin: auto 5px;
   }
   main {
     position: relative;
-    width: 95%;
-    height: 100%;
+    width: 400px;
+    height: 650px;
     background-color: #0b0b0b;
     border-radius: 5px 5px 20px 20px;
   }
@@ -172,7 +173,7 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
     height: 75%;
-    width: 90%;
+    width: 400px;
     margin: 0 auto;
   }
   .description {
