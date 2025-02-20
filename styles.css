@@ -145,109 +145,42 @@ hr {
   box-shadow: -4px -4px 4px #ffffff40, 4px 4px 4px #ffffff40;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body {
-    width: 100vw;
-  }
-  main {
+    margin: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    background-color: #0b0b0b;
-    border-radius: 10px;
   }
-
-  hr {
-    height: 4px;
-    background-color: #1c1c1c;
-    border-radius: 10px;
-    margin: 10px 0;
-    border: none;
-  }
-
-  .board {
+  .game {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-    width: 100%;
-    height: auto;
+    justify-content: center;
+  }
+  .board {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .column {
+    width: 9%;
+  }
+  .hole {
+    width: 95%;
+    height: 13%;
   }
 
   .description {
     display: none;
   }
-
-  .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: auto;
-  }
-
-  .peg-board {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #1c1c1c;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-
-  .key-pegs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 90%;
-    height: auto;
-    background-color: #1c1c1c;
-    border-radius: 10px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hole {
-    border-radius: 50%;
-    width: 95%;
-    height: auto;
-    background: #6b6b6b;
-    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.2),
-      inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-  }
-
   .key {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background: #8b8b8b;
-    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.2),
-      inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    margin: 5px auto;
-  }
-
-  .colors {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    width: 90%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-  }
-
-  .code-colors {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 75%;
+    height: 40%;
   }
 }
