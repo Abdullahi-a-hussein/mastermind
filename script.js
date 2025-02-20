@@ -112,14 +112,10 @@ for (let i = 0; i < 10; i++) {
         event.target.style.background = pickedCode;
         currentEntry += 1;
         selectedColors[j] = pickedCode;
-        console.log(selectedColors);
-        console.log(hole);
       } else if (hole.selected && pickedCode != undefined && currentpegs == i) {
         hole.selected = true;
         event.target.style.background = pickedCode;
         selectedColors[j] = pickedCode;
-        console.log(selectedColors);
-        console.log(hole);
       }
       if (currentEntry == 4 && currentpegs < 10) {
         updateKeys(SecretColors, selectedColors, gameKeys[i]);
