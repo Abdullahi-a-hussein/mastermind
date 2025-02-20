@@ -120,6 +120,7 @@ hr {
 
 #red {
   background-color: red;
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #blue {
   background-color: blue;
@@ -154,6 +155,19 @@ hr {
     align-items: center;
     justify-content: center;
   }
+  .colors {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .code-colors {
+    width: 13%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
   .game {
     margin: 0;
     display: flex;
@@ -169,11 +183,12 @@ hr {
     justify-content: center;
   }
   .column {
-    width: 9%;
+    width: 5.5%;
   }
   .hole {
     width: 95%;
-    height: 13%;
+    height: auto;
+    aspect-ratio: 1/1;
   }
 
   .description {
@@ -181,6 +196,7 @@ hr {
   }
   .key {
     width: 75%;
-    height: 40%;
+    height: auto;
+    aspect-ratio: 1/1;
   }
 }
